@@ -1,0 +1,32 @@
+{
+  "Template HTML Atividade": {
+    "prefix": "???",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"pt-br\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <link rel=\"stylesheet\" href=\"../css/custom.css\">",
+      "    <title>atividade ${1:}</title>",
+      "    <link rel=\"icon\" href=\"data:,\" type=\"image/x-icon\">",
+      "</head>",
+      "<body>",
+      "",
+      "    <nav>",
+      "        <h3>Atividade ${2:}:</h3>",
+      "        ${4:<p>Selecionar elementos e alterar conteúdo.</p>}",
+      "        <a href=\"../index.html\">Voltar para o início</a>",
+      "    </nav>",
+      "",
+      "    <main>",
+      "        $0",
+      "    </main>",
+      "",
+      "    <script src=\"../js/atividade${3:}.js\"></script>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Template HTML para a atividade"
+  }
+}
