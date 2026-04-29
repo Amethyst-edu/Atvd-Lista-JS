@@ -50,12 +50,24 @@ button:hover {
     transform: scale(1.05);
 }
 
-/*footer { 
-    background: #333;
-    color: #bbb;
-    text-align: center;
-    padding: 1rem;
-}*/
+/*alguns ajustes atividade 3*/
+li {
+    margin-left: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remover {
+    padding: 5px 10px;
+}
+
+body.dark .remover:hover {
+    background-color: #ff4d4d;
+}
+
+/*footer removido, nunca seria uasdo*/
 
 /* -- Tema Escuro - Atividade 2 -- */
 
@@ -74,13 +86,13 @@ body.dark nav a {
 }
 
 body.dark button {
-    background-color: darkblue;
+    background-color: #444;
     color: #f4f4f4;
     box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 
 body.dark button:hover {
-    background-color: #444;
+    background-color: darkblue;
     color: #f4f4f4;
 }
 
