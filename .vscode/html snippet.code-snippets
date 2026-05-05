@@ -7,7 +7,7 @@
       "<head>",
       "    <meta charset=\"UTF-8\">",
       "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-      "    <link rel=\"stylesheet\" href=\"../../27-04/3P-2026-Atvd-JS-main/css/custom.css\">",
+      "    <link rel=\"stylesheet\" href=\"../../../custom.css\">",
       "    <title>atividade ${1:x}</title>",
       "    <link rel=\"icon\" href=\"data:,\" type=\"image/x-icon\">",
       "    <script src=\"../../27-04/3P-2026-Atvd-JS-main/js/escuro.js\" defer></script>",
