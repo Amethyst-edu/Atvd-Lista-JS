@@ -1,6 +1,6 @@
 let string = []
 
-let stringF = string;
+let stringF = []
 
 function renderizar() {
     const lista = document.getElementById('List');
@@ -9,22 +9,25 @@ function renderizar() {
         const item = document.createElement('li');
         item.innerHTML = string[i];
         lista.appendChild(item);
-        filtrar();
     }
 }
 
 const topAdd = document.getElementById('addTop');
 topAdd.addEventListener('click', function() {
     const item = prompt('Insira o conteúdo do item:'); // bullet removido pois contam como caracteres
+    if (item !== null && item.trim() !== '') {
     string.unshift(item);
     renderizar();
+    }
 })
 
 const bottomAdd = document.getElementById('addBottom');
 bottomAdd.addEventListener('click', function() {
     const item = prompt('Insira o conteúdo do item:');
-    string.push(item);
-    renderizar();
+    if (item !== null && item.trim() !== '') {
+        string.push(item);
+        renderizar();
+    }
 })
 
 const topRemove = document.getElementById('removeTop');
@@ -54,6 +57,7 @@ function filtrar(){
 
 const iniciarFiltro = document.getElementById('iniciarFiltro');
 iniciarFiltro.addEventListener('click', function() {
+    filtrar();
     const listaF = document.getElementById('ListF');
     listaF.innerHTML = '';
     for (let i = 0; i < stringF.length; i++) {
